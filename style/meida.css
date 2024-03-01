@@ -1,0 +1,202 @@
+@media screen and (max-width: 550px) {
+    .logo{
+        width: 60%;
+    }
+
+    .menu-button{
+        width: auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav-item:nth-child(1), .nav-item:nth-child(2), .nav-item:nth-child(3){
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .news-gallery-img-1 {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /* .home-block{
+        height: 400px;
+    }
+    .home-text-block h1{
+        margin-top: 70px;
+    } */
+}
+
+@media screen and (max-width: 992px) {
+    .home-block {
+        height: auto; /* Змінюємо висоту на авто для адаптивності */
+        background-position-y: 0;
+    }
+    .home-block::after {
+        content: "";
+        position: absolute;
+        top: 100%; /* Позиціюємо за межі блоку */
+        left: 0;
+        width: 100%;
+        height: 100px; /* Встановлюємо висоту білого простору */
+        /* background-color: #ffffff; Заповнюємо білим кольором */
+    }
+
+    .home-text-block h1{
+        margin-top: 70px;
+    } 
+
+    .home-grid-element-text-content a{
+        font-size: 12px;
+    }
+
+    .home-grid-element-text-content span{
+        font-size: 16px;
+    }
+
+    .home-grid{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .circle{
+        width: 100px;
+        height: 100px;
+    }
+
+    .circle img{
+        width: 80%;
+    }
+
+    .carousel-control-next {
+        right: -10%;
+    }
+
+    .veni-fiera-text-inform section{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news-gallery-block{
+        flex-wrap: wrap;
+    }
+
+    .news-gallery-item{
+        width: 100%;
+    }
+
+    .news-second-main-block{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .news-second-block{
+        width: 100%;
+    }
+
+    .news-gallery-item-1{
+        max-width: 100%;
+    }
+
+    .news-gallery-text-content-1{
+        width: 65%;
+        margin-left: 5px;
+    }
+
+    .circle{
+        width: 80px;
+        height: 80px;
+    }
+
+    .circle img{
+        width: 80%;
+    }
+
+    .tutorial-block{
+        padding-bottom: 50px;
+    }
+
+    .tutorial-block .title-block{
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 658px) {
+    /* .news-gallery-block{
+        justify-content: center;
+        flex-wrap: wrap;
+    } */
+}
+
+@media screen and (max-width: 575px) {
+    .mondi-gallery-item{
+        width: 100%;
+    }
+
+    .mondi-block{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding-top: 40px;
+        padding-bottom: 17px;
+    }
+
+    .mondi-gallery-block{
+        height: 110px;
+    }
+
+    .tutorial-gallery{
+        gap: 15px;
+    }
+
+    .tutorial-gallery-block{
+        width: 90%;
+    }
+
+    .sponsor-block-item{
+        display: flex;
+        justify-content: center;
+    }
+
+    .roma-img, .vicenza-img{
+        width: 124px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .veni-fiera-place-item{
+        padding-right: 53px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .veni-fiera-place-text-info{
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    .home-grid-element-text-content a{
+        font-size: 10px;
+    }
+
+    .home-grid-element-text-content span{
+        font-size: 12px;
+    }
+
+    .title-block h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news-gallery-block, .news-second-block{
+        gap: 20px;
+    }
+}

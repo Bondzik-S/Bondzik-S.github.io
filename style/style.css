@@ -1,0 +1,526 @@
+:root{
+    --white-color: #FFFFFF;
+    --light-color: #F4ECE8;
+    --dark-color: #3D3D3C;
+    --orange-color: #F39200;
+    --light-dorder: #F2F2F2;
+    --dark-border: #B5B7C3;
+    --header-navigation-color: #3D3935;
+    --ocean-color: #059EB2;
+}
+
+h1{
+    /* font-size: 60px; */
+}
+
+.container{
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--dark-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--orange-color);
+}
+
+.wrapper {
+    width: 87.4%;
+}
+
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.avatar-btn{
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    background-image: url('../img/user-avatar.avif');
+    background-position: -12px;
+    background-size: cover;
+}
+
+.nav-link{
+    color: var(--header-navigation-color);
+}
+
+.nav-item:nth-child(1), .nav-item:nth-child(2), .nav-item:nth-child(3){
+    margin-right: 58px;
+}
+
+.nav-item{
+    font-size: 13px;
+}
+
+.nav-item img{
+    margin-left: 5px;
+}
+
+.search-btn{
+    margin-right: 33px;
+}
+
+.avatar-btn{
+    margin-left: 35px;
+}
+
+.name-dropdown{
+    margin-left: 41px;
+}
+
+#name-dropdown-toogle{
+    margin-left: 12px;
+}
+
+
+
+/* Початковий блок */
+.home-block {
+    height: 584px;
+    background:  url(../img/background-home.jpeg);
+    background-size: cover;
+    background-position-y: -128px;
+    background-repeat: no-repeat;
+}
+
+.home-block-gradient{
+    height: 100%;
+    background: rgb(61,61,60);
+    background: linear-gradient(90deg, rgba(61,61,60,0.2) 20%, rgba(61,61,60,1) 100%);
+}
+
+.home-text-block{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.title{
+    font-family: 'Abhaya Libre', sans-serif;
+}
+
+.home-grid-element{
+    background-color: var(--white-color);
+    height: 144px;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.home-grid{
+    gap: 24px;
+    margin-top: 52px;
+}
+
+.home-grid-img{
+    height: 134px;
+    width: 134px;
+    /* overflow: hidden; */
+    margin-right: 19px;
+}
+
+.home-grid-img img{
+    /* width:100%; */
+    object-fit:cover;
+}
+
+.home-grid-element-text-content{
+    height: 100%;
+}
+
+.home-grid-element-text-content a{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 14.87px;
+    margin-bottom: 50px;
+    font-size: 14.4px;
+}
+
+.home-grid-element-text-content span{
+    font-size: 18px;
+    line-height: 25.2px;
+}
+
+
+
+/* Блок News */
+.news-blosk{
+    background-color: var(--light-color);
+}
+
+.title-block{
+    border-bottom: 1px solid var(--dark-border);
+    padding-top: 42px;
+}
+
+.title-block span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    padding-bottom: 14px;
+    font-weight: 700;
+}
+
+.title-block h1{
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.news-gallery-item, .news-gallery-item-1{
+    background-color: #FFFFFF;
+    padding: 5px 5px 16px 5px;
+}
+
+.news-gallery-block{
+    margin-top: 20px;
+    padding-bottom: 81px;
+}
+
+.news-gallery-img{
+    width: 100%;
+    height: 373px;
+}
+
+.news-gallery-img img{
+    object-fit: cover; 
+    width: 100%; 
+    height: 100%;
+    object-position: top;
+}
+
+.news-gallery-text-content{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 29px;
+}
+
+.news-gallery-text-content a, .news-gallery-text-content span, .news-gallery-text-content-1 a{
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.news-gallery-text-content h1{
+    max-width: 692px;
+    text-align: center;
+    margin-top: 17px;
+    margin-bottom: 51px;
+}
+
+.news-gallery-btn{
+    width: 98%;
+    border: 1.5px solid var(--dark-color);
+    border-radius: 3px;
+    font-size: 13px;
+    line-height: 16.95px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.news-gallery-text-content-1{
+    width: 43%;
+    margin-right: 10px;
+}
+.news-gallery-item-1{
+    max-width: 407px;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.news-gallery-img-1{
+    width: 196px;
+    height: 305px;
+}
+
+.news-gallery-img-1 img{
+    object-fit: cover; 
+    width: 100%; 
+    height: 100%;
+    object-position: top;
+}
+
+.news-gallery-text-content-1 a{
+    margin-top: 10px;
+    margin-bottom: 15.77px;
+}
+
+.news-text-info{
+    font-size: 18px;
+    margin-bottom: 14.92px;
+    font-weight: 400;
+}
+
+.news-text-info-2{
+    font-size: 13px;
+}
+
+.news-href{
+    font-size: 9px;
+    margin-top: 74px;
+}
+
+.news-href a{
+    font-size: 9px;
+}
+
+.news-second-block{
+    height: 100%;
+    align-content: space-between;
+    justify-content: right;
+}
+
+
+
+/* Блок Mondi */
+.mondi-block{
+    background-color: var(--light-color);
+    padding-top: 86px;
+    padding-bottom: 26px;
+    margin-top: 82px;
+    margin-bottom: 82px;
+}
+
+.mondi-wrapper h4{
+    border-bottom: 1px solid var(--dark-color);
+    padding: 8px;
+}
+
+.mondi-gallery{
+    margin-top: 35px;
+}
+
+.circle{
+    width: 122px;
+    height: 122px;
+    background-color: var(--dark-color);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.mondi-gallery-block{
+    background-color: var(--white-color);
+    width: 100%;
+    height: 136px;
+    position: relative;
+    top: -58px;
+    padding-bottom: 24px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.mondi-gallery-item:nth-child(2) .mondi-gallery-block, .mondi-gallery-item:nth-child(4) .mondi-gallery-block{
+    padding-bottom: 16px;
+}
+
+
+
+/* Блок Tutorial */
+.tutorial-block{
+    background-color: var(--light-color);
+    padding-bottom: 104px;
+}
+
+.tutorial-block .title-block{
+    padding-top: 76px;
+}
+
+.tutorial-gallery{
+    margin-top: 23px
+}
+
+.tutorial-gallery-block{
+    background-color: var(--white-color);
+    padding: 5px;
+    width: 31.77%;
+}
+
+.tutorial-gallery-item img{
+    width: 100%;
+    max-height: 235px;
+}
+
+.tutorial-gallery-text{
+    font-size: 13px;
+    margin-top: 19px
+}
+
+.tutorial-gallery-text span{
+    
+    text-align: end;
+}
+
+.tutorial-gallery-text h3{
+    font-family: 'Abhaya Libre', sans-serif;
+    margin-top: 17.3px;
+    margin-bottom: 34px;
+}
+
+.tutorial-gallery-text .btn{
+    margin-bottom: 20px;
+}
+
+
+
+/* Блок Sponsors */
+.sponsor-block{
+    background-color: var(--light-color);
+    padding-top: 86px;
+    padding-bottom: 106px;
+    margin-top: 82px;
+    margin-bottom: 82px;
+}
+
+.sponsor-title{
+    border-bottom: 1px solid var(--dark-border);
+    padding-bottom: 8px;
+}
+
+.sponsor-title{
+    margin-bottom: 23px;
+}
+
+.sponsor-title span{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.carousel-control-prev{
+    /* position: absolute; */
+    left: -12.5%;
+}
+
+.carousel-control-next{
+    /* position: absolute; */
+    right: -12.5%;
+}
+
+.block-with-white-bg {
+    background-color: white;
+    width: 194px;
+    height: 192px;
+}
+
+
+
+/* Блок Veni-fiera */
+.veni-fiera-block{
+    background-color: var(--light-color);
+    padding-top: 69px;
+}
+
+.veni-fiera-block .container{
+    background-color: var(--white-color);
+}
+
+.veni-fiera-text-inform section{
+    width: 70%;
+}
+
+.veni-fiera-text-inform h1{
+    font-family: 'Abhaya Libre', sans-serif;
+    font-size: 60px;
+    margin-bottom: 22px;
+}
+
+.veni-fiera-text-inform span{
+    font-family: 'Abhaya Libre', sans-serif;
+    font-size: 13px;
+    margin-top: 11px;
+    line-height: 19.5px;
+}
+
+.veni-fiera-places{
+    color: var(--white-color);
+}
+
+.veni-fiera-place-item{
+    padding-top: 49px;
+    padding-bottom: 57px;
+    padding-left: 53px;
+}
+
+.veni-fiera-place-item:nth-child(1){
+    background-color: var(--ocean-color);
+}
+
+.veni-fiera-place-item:nth-child(2){
+    background-color: var(--orange-color);
+}
+
+.roma-img, .vicenza-img{
+    min-width: 124px;
+    height: 132px;
+    background-color: var(--white-color);
+    margin-right: 60px;
+}
+
+.veni-fiera-place-text-info h1{
+    font-family: 'Abhaya Libre', sans-serif;
+    font-weight: 700;
+}
+
+.veni-fiera-place-text-info .btn{
+    font-size: 13px;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    margin-top: 14px;
+}
+
+
+
+/* Блок Newsletter */
+.newsletter-block{
+    background-color: var(--light-color);
+}
+
+.form-label{
+    margin: 0;
+    color: var(--dark-color);
+    font-size: 13px;
+}
+
+.form-text{
+    font-size: 9px;
+    width: 75%;
+    margin-top: 42px;
+}
+
+.newsletter-form form {
+    width: 65%;
+}
+
+.form-control{
+    border: 1px solid var(--dark-color);
+    background-color: transparent;
+}
+
+.form-check{
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+
+.form-check-input{
+    border: 1px solid var(--dark-color);
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    margin-right: 7px;
+}
+
+.newsletter-form button{
+    width: 190px;
+    border: 1px solid var(--dark-color);
+    background-color: transparent;
+    color: var(--dark-color);
+    font-size: 13px;
+    margin-top: 33px;
+}
+
+.newsletter-form button:hover{
+    background-color: var(--dark-color);
+    border-color: var(--header-navigation-color);
+}

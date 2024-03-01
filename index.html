@@ -3,10 +3,507 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ablimente</title>
+    <link rel="icon" href="./img/flower.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://bootstraptema.ru/plugins/2016/bootsnav/bootsnav.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/meida.css">
+<script>
+    $(document).ready(function(){
+        // Enable Bootstrap 5 dropdown hover
+        $('ul.navbar-nav li.dropdown').hover(function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown(500);
+        }, function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp(500);
+        });
+
+        // Adding hover effect to multi-level dropdowns
+        $('ul.navbar-nav li.dropdown .dropdown-menu > li.dropdown').hover(function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideDown(500);
+        }, function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideUp(500);
+        });
+    });
+</script>
+
+    <!-- Шрифт -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <a class="navbar-brand" href="./index.html">
+                <img class="img-fluid" src="./img/abilmente-magazine 1.svg" alt="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav" style="color: var(--header-navigation-color);">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle-custom" href="#" id="navbarDropdownMagazine" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Magazine <img src="./img/tooggle.svg" alt="tooggle">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMagazine">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle-custom" href="#" id="navbarDropdownNews" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    News <img src="./img/tooggle.svg" alt="tooggle">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownNews">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle-custom" href="#" id="navbarDropdownNews" role="button" data-bs-toggle="dropdown" aria-expanded="false">Titolo Articolo <img src="./img/tooggle.svg" alt="tooggle"></a>
+                                    
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownNews">
+                                            <li><a class="dropdown-item" href="#"></a>Angelica Foshi</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle-custom" href="#" id="navbarDropdownNews" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Tutorial <img src="./img/tooggle.svg" alt="tooggle">
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownNews">
+                                    <li><a class="dropdown-item" href="#">Titolo Tutorial</a></li>
+                                </ul>
+                            
+                            </li>
+                            <li><a class="dropdown-item" href="#">Blogger</a></li>
+                            <li><a class="dropdown-item" href="#">Cucito & Filato</a></li>
+                            <li><a class="dropdown-item" href="#">Storie Creative</a></li>
+                            <li><a class="dropdown-item" href="#">Sponsors & Partners</a></li>
+                            <li><a class="dropdown-item" href="#">Contatti</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle-custom" href="#" id="navbarDropdownCorsi" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Corsi <img src="./img/tooggle.svg" alt="tooggle">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownCorsi">
+                            <li><a class="dropdown-item" href="#">Corsi online</a></li>
+                            <li><a class="dropdown-item" href="#">Negazio online</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fiere<img src="./img/tooggle.svg" alt="tooggle"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Negozi<img src="./img/tooggle.svg" alt="tooggle"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class=" d-none d-lg-flex ">
+                <div style="border-right: 1px solid #F2F2F2; display: flex;">
+                    <button class="btn search-btn" type="submit"><img src="./img/search-btn.svg" alt=""></button> <!-- Пошук -->
+                </div>
+                <!-- Аватар фото -->
+                <div class="btn avatar-btn">
+                </div>
+
+                <div class="btn align-items-center d-flex">
+                    <a href="#" alt="" class="text-decoration-none text-dark name-dropdown">Annachiara<img id="name-dropdown-toogle" src="./img/tooggle.svg" alt=""></a>
+                    
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Початковий блок -->
+    <div class="home-block">
+        <div class="home-block-gradient">
+            <div class="home-content-block container d-flex flex-lg-row col-lg-12 flex-column">
+                <!-- Заголовок -->
+                <div class="home-text-block col-lg-7">
+                    <h1 class="title display-4 fw-bold " style="color: var(--white-color);">
+                        Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod 
+                    </h1>
+                    <div class="addition fw-normal" style="color: var(--white-color);">
+                        Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod 
+                    </div>
+                </div>
+                <!-- Грид колонки з картинками -->
+                <div class="home-grid col-lg-4 ms-auto row align-items-center">
+                    <div class="home-grid-element d-flex">
+                        <div class="home-grid-img">
+                            <img src="./img/flovers-home-grid.png" alt="" class="home-grid-img">
+                        </div>
+                        <div class="home-grid-element-text-content d-block">
+                            <a href="#">Lorem ipsum</a>
+                            <span class="fw-400">Lorem ipsum dolor sit amet</span>
+                        </div>
+                    </div>
+                    <div class="home-grid-element d-flex">
+                        <div class="home-grid-img">
+                            <img src="./img/flovers1-home-grid.png" alt="" class="home-grid-img">
+                        </div>
+                        <div class="home-grid-element-text-content">
+                            <a href="#">Lorem ipsum</a>
+                            <span class="fw-400">Lorem ipsum dolor sit amet</span>
+                        </div>
+                    </div>
+                    <div class="home-grid-element d-flex">
+                        <div class="home-grid-img">
+                            <img src="./img/background-home.jpeg" alt="" class="home-grid-img">
+                        </div>
+                        <div class="home-grid-element-text-content">
+                            <a href="#">Lorem ipsum</a>
+                            <span class="fw-400">Lorem ipsum dolor sit amet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Блок News -->
+    <div class="news-blosk">
+        <div class="container">
+            <!-- Заголовок -->
+            <div class="title-block title fw-bold d-flex">
+                <h1 class="fw-bold col-xl-11 col-lg-10 col-sm-9 col-8 d-flex align-items-end">News</h1><span class="btn col-xl-1 col-lg-2 col-sm-3 col-4 d-flex align-items-end justify-content-end">Vedi tutte</span>
+            </div>
+
+            <!-- Галерея новин -->
+            <div class="news-gallery-block d-flex flex-md-row flex-column justify-content-between align-content-sm-center">
+                <div class="news-gallery-item col-8 col-lg-7 col-md-6">
+                    <div class="news-gallery-img">
+                        <img src="./img/background-home.jpeg" alt="">
+                    </div>
+                    
+                    <div class="news-gallery-text-content d-flex">
+                        <a href="#">Lorem ipsum </a>
+                        <h1 class="title">Lorem ipsum dolor sit amet, consectetur adipisci elit</h1>
+                        <span>Di <a href="#">Angela Rossi</a></span>
+                        <div class="btn news-gallery-btn">
+                            Scopri di più
+                        </div>
+                    </div>
+                </div>
+                <div class="news-second-main-block col-4 col-md-5 col-sm-8">
+                    <div class="row d-flex news-second-block">
+                        <div class="news-gallery-item-1 d-flex">
+                            <div class="news-gallery-img-1">
+                                <img src="./img/batterfly.png" alt="">
+                            </div>
+                            
+                            <div class="news-gallery-text-content-1 flex-column d-flex">
+                                <a href="#">Lorem ipsum </a>
+                                <span class="news-text-info">Lorem ipsum dolor sit amet</span>
+                                <span class="title news-text-info-2">Lorem ipsum dolor sit <br> amet...</span>
+                                <span class="news-href">Di <a href="#">Angela Rossi</a></span>
+                                <div class="btn news-gallery-btn">
+                                    Scopri di più
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-gallery-item-1 d-flex">
+                            <div class="news-gallery-img-1">
+                                <img src="./img/bany.jpeg" alt="">
+                            </div>
+                            
+                            <div class="news-gallery-text-content-1 flex-column d-flex">
+                                <a href="#">Lorem ipsum </a>
+                                <span class="news-text-info">Lorem ipsum dolor sit amet</span>
+                                <span class="title news-text-info-2">Lorem ipsum dolor sit <br> amet...</span>
+                                <span class="news-href">Di <a href="#">Angela Rossi</a></span>
+                                <div class="btn news-gallery-btn">
+                                    Scopri di più
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Блок Mondi -->
+    <div class="mondi-block container d-flex justify-content-center">
+        <div class="mondi-wrapper col-10">
+            <h4>Mondi</h4>
+            <div class="mondi-gallery d-flex flex-column flex-sm-row justify-content-between">
+                <div class="mondi-gallery-item col-2 d-flex flex-column align-items-center">
+                    <div class="circle btn btn-dark d-flex justify-content-center">
+                        <img src="./img/clubok.svg" alt="">
+                    </div>
+                    <div class="mondi-gallery-block d-flex justify-content-center align-items-end">
+                        <span>Cucito & Filato</span>
+                    </div>
+                </div>
+                <div class="mondi-gallery-item col-2 d-flex flex-column align-items-center">
+                    <div class="circle btn btn-dark d-flex justify-content-center">
+                        <img src="./img/noznitsi.svg" alt="">
+                    </div>
+                    <div class="mondi-gallery-block d-flex justify-content-center align-items-end">
+                        <span>Carta,<br> 
+                            Scrap & Colore</span>
+                    </div>
+                </div>
+                <div class="mondi-gallery-item col-2 d-flex flex-column align-items-center">
+                    <div class="circle btn btn-dark d-flex justify-content-center">
+                        <img src="./img/decorations.svg" alt="">
+                    </div>
+                    <div class="mondi-gallery-block d-flex justify-content-center align-items-end">
+                        <span>Decorazione</span>
+                    </div>
+                </div>
+                <div class="mondi-gallery-item col-2 d-flex flex-column align-items-center">
+                    <div class="circle btn btn-dark d-flex justify-content-center">
+                        <img src="./img/shit.svg" alt="">
+                    </div>
+                    <div class="mondi-gallery-block d-flex justify-content-center align-items-end">
+                        <span>Ricamo<br> 
+                            & Tradizione</span>
+                    </div>
+                </div>
+                <div class="mondi-gallery-item col-2 d-flex flex-column align-items-center">
+                    <div class="circle btn btn-dark d-flex justify-content-center">
+                        <img src="./img/acsessuar.svg" alt="">
+                    </div>
+                    <div class="mondi-gallery-block d-flex justify-content-center align-items-end">
+                        <span>Bijoux & Accessori</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Блок Tutorial -->
+    <div class="tutorial-block">
+        <div class="container">
+            <div class="title-block title fw-bold d-flex">
+                <h1 class="fw-bold col-xl-11 col-lg-10 col-sm-9 col-8 d-flex align-items-end">Tutorial</h1><span class="btn col-xl-1 col-lg-2 col-sm-3 col-4 d-flex align-items-end justify-content-end">Vedi tutte</span>
+            </div>
+
+            <div class="tutorial-gallery d-flex flex-column flex-sm-row justify-content-between align-items-center">
+                <div class="tutorial-gallery-block">
+                    <div class="tutorial-gallery-item">
+                        <img src="./img/art.png" alt="">
+                        
+                        <div class="tutorial-gallery-text">
+                            <div class="d-flex justify-content-between">Durata <span>Di <a href="#">Angela Rossi</a></span></div>
+                            <h3>Lorem ipsum dolor sit, consectetur adipisci</h3>
+                            <div class="btn news-gallery-btn">Guarda</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tutorial-gallery-block">
+                    <div class="tutorial-gallery-item">
+                        <img src="./img/background-home.jpeg" alt="">
+                        
+                        <div class="tutorial-gallery-text">
+                            <div class="d-flex justify-content-between">Durata <span>Di <a href="#">Angela Rossi</a></span></div>
+                            <h3>Lorem ipsum dolor sit, consectetur adipisci</h3>
+                            <div class="btn news-gallery-btn">Guarda</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tutorial-gallery-block">
+                    <div class="tutorial-gallery-item">
+                        <img src="./img/pigs.png" alt="">
+                        
+                        <div class="tutorial-gallery-text">
+                            <div class="d-flex justify-content-between">Durata <span>Di <a href="#">Angela Rossi</a></span></div>
+                            <h3>Lorem ipsum dolor sit, consectetur adipisci</h3>
+                            <div class="btn news-gallery-btn">Guarda</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Блок Sponsor -->
+    <div class="sponsor-block container d-flex justify-content-center">
+        <div class="sponsor-wrapper col-10">
+            <div class="sponsor-title d-flex justify-content-between align-items-end">
+                <h4>Sponsor</h4>
+                <span>Vedi tutti</span>
+            </div>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="flex-lg-row d-flex justify-content-between">
+                            <div class="sponsor-block-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <div class="block-with-white-bg d-flex align-items-center justify-content-center">Sponsor</div>
+                            </div>
+                            <div class="sponsor-block-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <div class="block-with-white-bg d-flex align-items-center justify-content-center">Sponsor</div>
+                            </div>
+                            <div class="sponsor-block-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <div class="block-with-white-bg d-flex align-items-center justify-content-center">Sponsor</div>
+                            </div>
+                            <div class="sponsor-block-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <div class="block-with-white-bg d-flex align-items-center justify-content-center">Sponsor</div>
+                            </div>
+                            <div class="sponsor-block-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <div class="block-with-white-bg d-flex align-items-center justify-content-center">Sponsor</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="row">
+                            <!-- Додайте ще 5 елементів col-2 тут -->
+                        </div>
+                    </div>
+                    <!-- Додайте інші розділи каруселі за потреби -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- Блок Veni-fiera -->
+    <div class="veni-fiera-block">
+        <div class="container">
+            <div class="d-flex flex-lg-row flex-column">
+                <div class="veni-fiera-text-inform col-lg-6 col-12 d-flex justify-content-center align-items-center">
+                    <section>
+                        <h1>
+                            Vieni a trovarci in fiera!
+                        </h1>
+                        <h4>
+                            Abilmente è la fiera che proprio non puoi perderti interamente dedicata alla manualità creativa!
+                        </h4>
+                        <span>
+                            Che tu ci conosca già oppure no, qui abbiamo un bel po' di cose che potrebbero davvero mandarti fuori di testa
+                        </span>
+                    </section>
+                </div>
+
+                <div class="veni-fiera-places col-lg-6 col-12">
+                    <div class="veni-fiera-place-item d-flex flex-sm-row flex-column">
+                        <div class="roma-img">
+
+                        </div>
+
+                        <div class="veni-fiera-place-text-info">
+                            <h1>
+                                Roma
+                            </h1>
+                            <h4>
+                                Dal 23 al 26 settembre 2021
+                            </h4>
+                            <div class="btn">
+                                Scopri di più
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="veni-fiera-place-item d-flex flex-sm-row flex-column">
+                        <div class="vicenza-img">
+
+                        </div>
+                        
+                        <div class="veni-fiera-place-text-info">
+                            <h1>
+                                Vicenza
+                            </h1>
+                            <h4>
+                                Dal 14 al 17 ottobre 2021
+                            </h4>
+                            <div class="btn">
+                                Scopri di più
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Блок Newsletter -->
+    <div class="newsletter-block container d-flex justify-content-center">
+        <div class="d-flex flex-lg-row flex-column">
+            <div class="veni-fiera-text-inform col-lg-6 col-12 d-flex justify-content-center align-items-center">
+                <section>
+                    <h1>
+                        La nostra scintillante newsletter!
+                    </h1>
+                    <h4>
+                        Novità di fiera in anteprima, creative da seguire, tutorial freschissimi, promozioni e codici sconto per le tue spese folli online. Wonder Woman sarà fiera di te!
+                    </h4>
+                </section>
+            </div>
+
+            <div class="newsletter-form col-lg-6 col-12">
+                <form>
+                    <div class="mb-3">
+                      <label for="InputEmail1" class="form-label">Nome</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">E-mail</label>
+                      <input type="email" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div id="emailHelp" class="form-text">Letta l'informativa comunicatami, dichiaro la seguente volontà circa il trattamento dati per autonome finalità di marketing diretto da parte di terzi partner di IEG (finalità 4 dell'informativa)
+
+                        <div class="d-flex mt-1">
+                            <div class="form-check d-flex align-items-center">
+                                
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Acconsento
+                                    </label>
+                                
+                            </div>
+                            <div class="form-check d-flex align-items-center">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Non Acconsento
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Iscriviti</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+
+
+
+
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> -->
 </body>
 </html>
