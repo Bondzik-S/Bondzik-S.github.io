@@ -410,6 +410,7 @@ a{
 .veni-fiera-block{
     background-color: var(--light-color);
     padding-top: 69px;
+    padding-bottom: 88px;
 }
 
 .veni-fiera-block .container{
@@ -475,6 +476,8 @@ a{
 /* Блок Newsletter */
 .newsletter-block{
     background-color: var(--light-color);
+    margin-top: 80px;
+    margin-bottom: 86px;
 }
 
 .form-label{
@@ -511,7 +514,7 @@ a{
     margin-right: 7px;
 }
 
-.newsletter-form button{
+.newsletter-form button, .form-text button{
     width: 190px;
     border: 1px solid var(--dark-color);
     background-color: transparent;
@@ -520,7 +523,117 @@ a{
     margin-top: 33px;
 }
 
-.newsletter-form button:hover{
+.newsletter-form button:hover, .form-text button:hover{
     background-color: var(--dark-color);
     border-color: var(--header-navigation-color);
+}
+
+.newsletter-wrapper{
+    padding-top: 57px;
+    padding-bottom: 79px;
+}
+
+
+
+
+/* Блок Footer */
+.footer-block{
+    background-color: var(--light-color);
+}
+
+.footer-main{
+    padding-bottom: 87px;
+}
+
+.social-media{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--header-navigation-color);
+    text-align: end;
+}
+
+.social-media a:nth-child(1), .social-media a:nth-child(2), .social-media a:nth-child(3){
+    margin-right: 25.48px;
+}
+
+#footer-logo{
+    position: relative;
+    top: 33.18px;
+}
+
+.footer-navigation-block{
+    margin-top: 44px;
+    padding-bottom: 66px;
+    border-bottom: 1px solid var(--header-navigation-color);
+}
+
+.footer-navigation-block a{
+    color: var(--dark-color);
+}
+.footer-form{
+    width: 100%;
+}
+
+.footer-form-block{
+    margin-top: 56px;
+}
+
+.footer-navigation-block span{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.footer-form-block section {
+    width: 49%;
+}
+
+.footer-form-block section h4{
+    line-height: 32.64px;
+}
+
+.footer-form-block section h6{
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 19.5px;
+}
+
+.footer-form-inputs{
+    width: 43%;
+    margin-left: 54px;
+}
+
+.footer-form-block .form-text{
+    width: 41.9%;
+    margin-top: 18px;
+}
+
+.form-text button{
+    margin-top: 10px;
+}
+
+.footer-etc{
+    background-color: var(--white-color);
+    padding-top: 25px;
+    padding-bottom: 41px;
+}
+
+.footer-etc img:nth-child(1){
+    margin-right: 53px;
+}
+
+.footer-etc img:nth-child(2){
+    margin-right: 18px;
+}
+
+.pattent{
+    background-color: var(--light-dorder);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 18.2px;
+    font-weight: 400;
 }

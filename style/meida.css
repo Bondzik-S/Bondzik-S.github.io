@@ -78,6 +78,22 @@
         padding-top: 40px;
         padding-bottom: 40px;
     }
+
+    .footer-navigation-block span a{
+        font-size: 18px;
+    }
+
+    .footer-navigation-block a{
+        font-size: 16px;
+    }
+
+    .footer-etc img{
+        width: 30%;
+    }
+
+    .footer-etc img:nth-child(2), .footer-etc img:nth-child(3){
+        width: 20%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -123,6 +139,28 @@
 
     .tutorial-block .title-block{
         padding-top: 50px;
+    }
+
+    .footer-form{
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .footer-form-inputs{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .footer-form-block .form-text{
+        width: 100%;
+    }
+
+    .footer-navigation-block span a{
+        font-size: 15px;
+    }
+
+    .footer-navigation-block a{
+        font-size: 13px;
     }
 }
 
@@ -179,6 +217,91 @@
         text-align: center;
     }
     
+    .form-text{
+        width: 100%;
+    }
+
+    .newsletter-form button{
+        width: 100%;
+    }
+
+    .veni-fiera-text-inform h1{
+        font-size: 45px;
+    }
+    
+    .veni-fiera-text-inform h4{
+        font-size: 16px;
+    }
+
+    .newsletter-block{
+        margin-bottom: 46px;
+    }
+
+    .footer-navigation-block span a{
+        font-size: 13px;
+    }
+
+    .footer-navigation-block a{
+        font-size: 10px;
+    }
+
+    .footer-navigation-block {
+        width: 100%;
+    }
+
+    .footer-form-block, .footer-main, .footer-etc, .pattent{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .pattent{
+        font-size: 9px;
+    }
+
+    .social-media a img{
+        width: 20px;
+    }
+
+    #footer-logo{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer-navigation-block span a{
+        font-size: 10px;
+    }
+
+    .footer-navigation-block a{
+        font-size: 8px;
+    }
+
+    .footer-etc img:nth-child(1), .footer-etc img:nth-child(2){
+        margin: 0;
+        
+    }
+
+    .footer-etc .container div{
+        justify-content: space-between;
+    }
+
+    .form-text button{
+        width: 100px;
+    }
+
+    .social-media a:nth-child(1), .social-media a:nth-child(2), .social-media a:nth-child(3){
+        margin-right: 10px;
+    }
+
+    #footer-logo{
+        width: 100px;
+        top: 22.18px;
+    }
+
+    .social-media{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -192,6 +315,18 @@
 
     .title-block h1{
         font-size: 40px;
+    }
+
+    .newsletter-radio-buttons{
+        flex-direction: column;
+    }
+    
+    .footer-navigation-block span a{
+        font-size: 8px;
+    }
+
+    .footer-navigation-block a{
+        font-size: 7px;
     }
 }
 
